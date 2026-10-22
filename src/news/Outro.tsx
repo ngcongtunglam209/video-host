@@ -66,6 +66,10 @@ export const Outro: React.FC = () => {
           Wikimedia Commons (CC BY, CC BY-SA, Public domain). Ảnh tư liệu và minh
           họa, không chụp tại sự kiện.
         </div>
+        <div>
+          <span style={{ color: colors.text, fontWeight: 700 }}>Giọng đọc: </span>
+          AI tạo bởi ElevenLabs.
+        </div>
       </div>
     </AbsoluteFill>
   );

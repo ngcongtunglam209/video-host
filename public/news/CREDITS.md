@@ -17,5 +17,9 @@ photos, not photos of the reported events.
 | spain.jpg | Valencia Province Under Floodwater (MODIS 2024-11-04).jpg | MODIS Land Rapid Response Team, NASA GSFC | Public domain |
 | typhoon.jpg | Super Typhoon Hagibis off Guam (MODIS 2019-10-09).jpg | MODIS Land Rapid Response Team, NASA GSFC | Public domain |
 
-Images were downscaled to at most 1920 px wide. Font: Be Vietnam Pro
+Images were downscaled to at most 1920 px wide.
+
+The voiceover in `../voiceover/` is AI-generated with ElevenLabs
+(`eleven_v4`, voice "Phan Anh"). After replacing a clip, run
+`node scripts/voiceover-durations.mjs` so scene lengths follow the new audio. Font: Be Vietnam Pro
 (SIL Open Font License, see `../fonts/OFL.txt`).

@@ -7,6 +7,8 @@ export type Story = {
   bullets: string[];
   stat?: { value: string; label: string };
   source: string;
+  // Clip name in public/voiceover (without .mp3).
+  voiceover: string;
   image: string;
   // How to frame the image inside the panel (CSS object-position).
   imagePosition?: string;
@@ -28,6 +30,7 @@ export const stories: Story[] = [
       "Nhà vua Frederik X và Hoàng hậu Mary chủ trì lễ tiễn tại Cung điện Amalienborg.",
     ],
     source: "Báo Nhân Dân",
+    voiceover: "02-denmark",
     image: "news/denmark.jpg",
     imageCaption: "Quảng trường Amalienborg, Copenhagen (ảnh tư liệu)",
     imageCredit: "Visit European Castles / CC BY-SA 4.0",
@@ -42,6 +45,7 @@ export const stories: Story[] = [
       "Mục tiêu là người bệnh và bệnh viện tiếp cận thuốc, thiết bị y tế với giá phù hợp khả năng chi trả.",
     ],
     source: "Báo Nhân Dân",
+    voiceover: "03-health",
     image: "news/assembly.jpg",
     imageCaption: "Tòa nhà Quốc hội, Hà Nội (ảnh tư liệu)",
     imageCredit: "Christophe95 / CC BY-SA 4.0",
@@ -57,6 +61,7 @@ export const stories: Story[] = [
     ],
     stat: { value: "1.738,7", label: "điểm · +46,7 (+2,76%)" },
     source: "Báo Tin tức (TTXVN)",
+    voiceover: "04-vnindex",
     image: "news/hose.jpg",
     imageCaption: "Sở Giao dịch Chứng khoán TP.HCM (ảnh tư liệu)",
     imageCredit: "Lengkeng91 / Public domain",
@@ -72,6 +77,7 @@ export const stories: Story[] = [
     ],
     stat: { value: "6.300 tỷ", label: "đồng đã thanh toán cho nhà thầu" },
     source: "Báo Tin tức (TTXVN)",
+    voiceover: "05-longthanh",
     image: "news/longthanh.jpg",
     imageCaption: "Hệ thống cao tốc quanh khu vực sân bay Long Thành (ảnh tư liệu)",
     imageCredit: "Hwipadam / CC BY-SA 4.0",
@@ -87,6 +93,7 @@ export const stories: Story[] = [
     ],
     stat: { value: "1:33.91", label: "100m bơi ếch nam SB5" },
     source: "Báo Nhân Dân",
+    voiceover: "06-paragames",
     image: "news/paraswim.jpg",
     imageCaption: "Ảnh minh họa: thi đấu bơi người khuyết tật",
     imageCredit: "U.S. Army / Staff Sgt. Michael Hunnisett / Public domain",
@@ -101,6 +108,7 @@ export const stories: Story[] = [
       "Tổng thống Zelensky ủng hộ đóng băng chiến tuyến như bước đầu tiến tới ngừng bắn.",
     ],
     source: "Euronews, Democracy Now!",
+    voiceover: "08-russia",
     image: "news/kremlin.jpg",
     imagePosition: "35% 50%",
     imageCaption: "Điện Kremlin, Moskva (ảnh tư liệu)",
@@ -116,6 +124,7 @@ export const stories: Story[] = [
       "Hàng nghìn người xuống đường tại Lisbon (Bồ Đào Nha) phản đối khủng hoảng nhà ở.",
     ],
     source: "Euronews, Democracy Now!",
+    voiceover: "09-europe",
     image: "news/paris.jpg",
     imageCaption: "Place de la République, Paris (ảnh tư liệu)",
     imageCredit: "Erwmat / CC BY-SA 4.0",
@@ -131,6 +140,7 @@ export const stories: Story[] = [
     ],
     stat: { value: "44", label: "người tiếp xúc gần đang được theo dõi" },
     source: "Al Jazeera",
+    voiceover: "10-ebola",
     image: "news/ebola.jpg",
     imageCaption: "Virus Ebola dưới kính hiển vi điện tử (ảnh tư liệu)",
     imageCredit: "CDC / Cynthia Goldsmith / Public domain",
@@ -145,6 +155,7 @@ export const stories: Story[] = [
     ],
     stat: { value: "≥ 5", label: "người thiệt mạng" },
     source: "Euronews",
+    voiceover: "11-spain",
     image: "news/spain.jpg",
     imageCaption: "Ảnh vệ tinh lũ lụt tại Valencia năm 2024 (ảnh tư liệu)",
     imageCredit: "NASA GSFC / MODIS / Public domain",
@@ -160,11 +171,18 @@ export const stories: Story[] = [
     ],
     stat: { value: "210 km/h", label: "sức gió theo số liệu vệ tinh" },
     source: "Báo Nhân Dân",
+    voiceover: "12-typhoon",
     image: "news/typhoon.jpg",
     imageCaption: "Ảnh minh họa: ảnh vệ tinh siêu bão Hagibis (2019)",
     imageCredit: "NASA GSFC / MODIS / Public domain",
   },
 ];
+
+export const VOICEOVER = {
+  intro: "00-intro",
+  section: { vn: "01-section-vn", world: "07-section-world" },
+  outro: "13-outro",
+} as const;
 
 export const INTRO_IMAGE = {
   image: "news/intro.jpg",

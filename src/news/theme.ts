@@ -28,8 +28,13 @@ export const regionLabel = { vn: "Trong nước", world: "Quốc tế" } as cons
 export const regionColor = { vn: colors.vn, world: colors.world } as const;
 
 export const FPS = 30;
+// Minimum scene lengths; scenes grow to fit their voiceover clip.
 export const INTRO_FRAMES = 150;
 export const SECTION_FRAMES = 75;
-export const STORY_FRAMES = 270;
+export const STORY_FRAMES = 240;
 export const OUTRO_FRAMES = 180;
 export const TRANSITION_FRAMES = 15;
+// Narration starts once the incoming transition has finished, and the scene
+// holds briefly after it ends.
+export const VOICE_DELAY_FRAMES = TRANSITION_FRAMES + 6;
+export const VOICE_TAIL_FRAMES = 20;
