@@ -1,0 +1,35 @@
+{
+  "name": "video-host",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "dev": "remotion studio",
+    "render": "remotion render HelloWorld out/video.mp4",
+    "typecheck": "tsc",
+    "render:news": "remotion render NewsRoundup out/ban-tin.mp4",
+    "render:weather": "remotion render FantasyWeather out/thoi-tiet-gia-tuong.mp4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ngcongtunglam209/video-host.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ngcongtunglam209/video-host/issues"
+  },
+  "homepage": "https://github.com/ngcongtunglam209/video-host#readme",
+  "dependencies": {
+    "@remotion/cli": "4.0.537",
+    "@remotion/fonts": "4.0.537",
+    "@remotion/transitions": "4.0.537",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1",
+    "remotion": "4.0.537"
+  },
+  "devDependencies": {
+    "@types/react": "^19.3.0",
+    "typescript": "^7.0.2"
+  }
+}
