@@ -6,7 +6,8 @@
     "dev": "remotion studio",
     "render": "remotion render HelloWorld out/video.mp4",
     "typecheck": "tsc",
-    "render:news": "remotion render NewsRoundup out/ban-tin.mp4"
+    "render:news": "remotion render NewsRoundup out/ban-tin.mp4",
+    "render:weather": "remotion render FantasyWeather out/thoi-tiet-gia-tuong.mp4"
   },
   "repository": {
     "type": "git",
